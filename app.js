@@ -6,7 +6,7 @@ const path = require("path");
 const authRoutes = require(".//routes/auth");
 const postRoutes = require(".//routes/posts");
 const commentRoutes = require(".//routes/comments");
-const userRoutes = require(".//routes/users");
+// const userRoutes = require(".//routes/users");
 
 const app = express();
 
@@ -22,7 +22,7 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 app.use("/api/auth", authRoutes);
 app.use("/api/posts", postRoutes);
 app.use("/api/comments", commentRoutes);
-app.use("/api/users", userRoutes);
+// app.use("/api/users", userRoutes);
 
 // MongoDB connection
 const MONGODB_URI =
