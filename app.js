@@ -3,10 +3,10 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const path = require("path");
-const authRoutes = require("./Vital-Backend/routes/auth");
-const postRoutes = require("./Vital-Backend/routes/posts");
-const commentRoutes = require("./Vital-Backend/routes/comments");
-const userRoutes = require("./Vital-Backend/routes/users");
+const authRoutes = require(".//routes/auth");
+const postRoutes = require(".//routes/posts");
+const commentRoutes = require(".//routes/comments");
+const userRoutes = require(".//routes/users");
 
 const app = express();
 
